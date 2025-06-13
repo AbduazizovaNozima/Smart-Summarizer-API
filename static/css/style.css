@@ -1,0 +1,25 @@
+.container {
+    max-width: 800px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
+#summary {
+    min-height: 100px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.loading {
+    display: none;
+}
+
+.error {
+    color: #dc3545;
+    margin-top: 10px;
+}

@@ -1,0 +1,28 @@
+time: 2025-06-13 17:18:45 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.0964s
+time: 2025-06-13 17:19:08 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.2614s
+time: 2025-06-13 17:19:10 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.0999s
+time: 2025-06-13 17:19:11 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.1211s
+time: 2025-06-13 17:19:13 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.1226s
+time: 2025-06-13 17:19:14 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.3845s
+time: 2025-06-13 17:19:16 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.0967s
+time: 2025-06-13 17:19:17 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.1188s
+time: 2025-06-13 17:19:19 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.1265s
+time: 2025-06-13 17:19:19 -- level: ERROR -- status: 500 -- method: POST -- path: /api/summarize -- client: 127.0.0.1
+time: 2025-06-13 17:19:29 -- level: ERROR -- status: 500 -- method: POST -- path: /api/summarize -- client: 127.0.0.1
+time: 2025-06-13 17:19:31 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.1709s
+time: 2025-06-13 17:21:00 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.2875s
+time: 2025-06-13 18:08:14 -- level: INFO -- status: 200 -- method: GET -- path: / -- client: 127.0.0.1 -- processing_time: 0.0108s
+time: 2025-06-13 18:08:14 -- level: ERROR -- status: 304 -- method: GET -- path: /static/js/main.js -- client: 127.0.0.1 -- processing_time: 0.0220s
+time: 2025-06-13 18:08:14 -- level: ERROR -- status: 304 -- method: GET -- path: /static/css/style.css -- client: 127.0.0.1 -- processing_time: 0.0233s
+time: 2025-06-13 18:08:14 -- level: WARNING -- status: 404 -- method: GET -- path: /favicon.ico -- client: 127.0.0.1 -- processing_time: 0.0007s
+time: 2025-06-13 18:08:19 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 1.0685s
+time: 2025-06-13 18:51:18 -- level: INFO -- status: 200 -- method: GET -- path: / -- client: 127.0.0.1 -- processing_time: 0.0087s
+time: 2025-06-13 18:51:18 -- level: INFO -- status: 200 -- method: GET -- path: /static/js/main.js -- client: 127.0.0.1 -- processing_time: 0.0164s
+time: 2025-06-13 18:51:18 -- level: INFO -- status: 200 -- method: GET -- path: /static/css/style.css -- client: 127.0.0.1 -- processing_time: 0.0163s
+time: 2025-06-13 18:51:18 -- level: WARNING -- status: 404 -- method: GET -- path: /favicon.ico -- client: 127.0.0.1 -- processing_time: 0.0008s
+time: 2025-06-13 18:51:27 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 0.8934s
+time: 2025-06-13 19:57:28 -- level: INFO -- status: 200 -- method: GET -- path: / -- client: 127.0.0.1 -- processing_time: 0.0072s
+time: 2025-06-13 19:57:28 -- level: ERROR -- status: 304 -- method: GET -- path: /static/css/style.css -- client: 127.0.0.1 -- processing_time: 0.0212s
+time: 2025-06-13 19:57:28 -- level: ERROR -- status: 304 -- method: GET -- path: /static/js/main.js -- client: 127.0.0.1 -- processing_time: 0.0182s
+time: 2025-06-13 19:57:28 -- level: WARNING -- status: 404 -- method: GET -- path: /favicon.ico -- client: 127.0.0.1 -- processing_time: 0.0006s
+time: 2025-06-13 19:58:39 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 0.9465s
