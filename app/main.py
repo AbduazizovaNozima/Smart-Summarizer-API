@@ -2,11 +2,12 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-import logging
+import uvicorn
 
 from app.api import summarizer
 from app.middleware.rate_limiter import add_rate_limiting
 from app.core.logging import setup_logging, add_logging_middleware
+from app.core import config
 
 logger = setup_logging()
 

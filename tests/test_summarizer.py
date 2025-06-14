@@ -14,7 +14,7 @@ def mock_summarizer(monkeypatch):
     monkeypatch.setattr("app.main.summarize_text", fake_summarize)
 
 
-@patch("app.api.endpoints.summarizer.summarizer_service")
+@patch("app.api.summarizer.summarizer_service")
 def test_summarize_success(mock_service):
     mock_service.is_ready.return_value = True
     mock_service.summarize.return_value = "Mocked summary"
