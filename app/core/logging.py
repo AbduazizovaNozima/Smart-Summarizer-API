@@ -3,41 +3,28 @@ import os
 from datetime import datetime
 import aiofiles
 from fastapi import Request, Response
-from typing import Callable
 
 
 def setup_logging():
-    """Asosiy logging sozlash"""
-    # Logs papkasini yaratish
     os.makedirs("logs", exist_ok=True)
 
-    logging.basicConfig(level=logging.WARNING)  # Boshqa kutubxonalar uchun WARNING darajasi
+    logging.basicConfig(level=logging.WARNING)
 
-
-    # Asosiy logger
     logger = logging.getLogger("summarizer")
     logger.setLevel(logging.INFO)
 
-    # Agar handler mavjud bo'lmasa
     if not logger.handlers:
-        # Fayl handleri
         file_handler = logging.FileHandler("logs/app.log")
         file_handler.setFormatter(logging.Formatter(
             "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         ))
         logger.addHandler(file_handler)
 
-        # Konsol handleri
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(logging.Formatter(
             "%(asctime)s - %(levelname)s - %(message)s"
         ))
         logger.addHandler(console_handler)
-
-        # Transformers kutubxonasi loglarini o'chirish
-        # logging.getLogger("transformers").setLevel(logging.ERROR)
-        # logging.getLogger("filelock").setLevel(logging.ERROR)
-        # logging.getLogger("huggingface_hub").setLevel(logging.ERROR)
 
     return logger
 
@@ -72,31 +59,21 @@ async def log_request(request: Request, status_code: int, processing_time: float
 
 
 def add_logging_middleware(app):
-    """Logging middleware qo'shish"""
 
     @app.middleware("http")
     async def logging_middleware(request: Request, call_next):
-        # So'rov boshlanish vaqti
         start_time = datetime.now()
 
         try:
-            # So'rovni qayta ishlash
             response = await call_next(request)
-
-            # Qayta ishlash vaqtini hisoblash
             processing_time = (datetime.now() - start_time).total_seconds()
-
-            # So'rovni log qilish
             await log_request(request, response.status_code, processing_time)
-
             return response
+
         except Exception as e:
-            # Xatoni log qilish
             logger = logging.getLogger("summarizer")
             logger.error(f"Unhandled exception: {str(e)}")
 
-            # Muvaffaqiyatsiz so'rovni log qilish
             await log_request(request, 500)
 
-            # 500 javob qaytarish
             return Response("Internal Server Error", status_code=500)

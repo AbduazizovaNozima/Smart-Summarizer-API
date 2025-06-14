@@ -124,3 +124,30 @@
 2025-06-14 11:24:34,005 - summarizer.api - INFO - Received summarization request: text length=5
 2025-06-14 11:24:34,006 - summarizer.api - INFO - Generating summary...
 2025-06-14 11:24:34,006 - summarizer.api - INFO - Summary generated successfully: length=14
+2025-06-14 12:30:51,563 - summarizer.api - INFO - Received summarization request: text length=1
+2025-06-14 12:30:51,564 - summarizer.service - INFO - Generating summary for text of length: 1
+2025-06-14 12:30:52,557 - summarizer.service - INFO - Summary generated successfully: length=58
+2025-06-14 12:30:52,557 - summarizer.api - INFO - Summary generated successfully: length=58
+2025-06-14 12:36:31,226 - summarizer.api - INFO - Received summarization request: text length=2
+2025-06-14 12:36:31,228 - summarizer.service - INFO - Generating summary for text of length: 2
+2025-06-14 12:36:32,654 - summarizer.service - INFO - Summary generated successfully: length=120
+2025-06-14 12:36:32,655 - summarizer.api - INFO - Summary generated successfully: length=120
+2025-06-14 12:36:53,560 - summarizer.api - INFO - Received summarization request: text length=3
+2025-06-14 12:36:53,561 - summarizer.service - INFO - Generating summary for text of length: 3
+2025-06-14 12:36:54,451 - summarizer.service - INFO - Summary generated successfully: length=30
+2025-06-14 12:36:54,451 - summarizer.api - INFO - Summary generated successfully: length=30
+2025-06-14 12:38:24,393 - summarizer.api - INFO - Received summarization request: text length=6
+2025-06-14 12:38:24,394 - summarizer.service - INFO - Generating summary for text of length: 6
+2025-06-14 12:38:26,201 - summarizer.service - INFO - Summary generated successfully: length=114
+2025-06-14 12:38:26,201 - summarizer.api - INFO - Summary generated successfully: length=114
+2025-06-14 12:42:25,471 - summarizer.api - INFO - Received summarization request: text length=1
+2025-06-14 12:42:25,471 - summarizer.api - ERROR - Summarization model is not loaded
+2025-06-14 12:45:21,201 - summarizer.api - INFO - Received summarization request: text length=2
+2025-06-14 12:45:21,201 - summarizer.service - ERROR - Summarization attempted but model is not loaded
+2025-06-14 12:45:21,201 - summarizer.api - ERROR - Error generating summary: Model is not loaded
+2025-06-14 12:46:59,715 - summarizer.api - INFO - Received summarization request: text length=3
+2025-06-14 12:46:59,718 - summarizer - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None, 'url': 'https://errors.pydantic.dev/2.10/v/model_attributes_type'}
+
+2025-06-14 12:48:03,738 - summarizer.api - INFO - Received summarization request: text length=4
+2025-06-14 12:48:03,739 - summarizer.api - ERROR - Summarization model is not loaded

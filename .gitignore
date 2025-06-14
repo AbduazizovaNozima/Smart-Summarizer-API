@@ -77,3 +77,6 @@ $RECYCLE.BIN/
 venv/
 __pycache__/
 *.pyc
+
+logs.access.log
+logs.app.log

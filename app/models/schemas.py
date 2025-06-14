@@ -2,7 +2,6 @@ from pydantic import BaseModel, validator
 
 
 class TextRequest(BaseModel):
-    """Text summarization uchun so'rov modeli"""
     text: str
 
     @validator('text')
@@ -13,5 +12,4 @@ class TextRequest(BaseModel):
 
 
 class SummaryResponse(BaseModel):
-    """Text summarization uchun javob modeli"""
     summary: str

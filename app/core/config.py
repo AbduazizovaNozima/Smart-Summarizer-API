@@ -10,8 +10,8 @@ MODEL_NAME = os.getenv("MODEL_NAME", "t5-small")
 
 # Rate limiting
 RATE_LIMIT_ENABLED = True
-RATE_LIMIT_REQUESTS = 10  # requests
-RATE_LIMIT_WINDOW = 60    # seconds
+RATE_LIMIT_REQUESTS = 10
+RATE_LIMIT_WINDOW = 60
 
 # Logging
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")

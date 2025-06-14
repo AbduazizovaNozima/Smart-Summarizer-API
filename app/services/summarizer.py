@@ -11,7 +11,6 @@ class SummarizerService:
         self._initialize_model()
 
     def _initialize_model(self):
-        """Summarization modelini yuklash"""
         try:
             logger.info(f"Loading model: {self.model_name}")
             self.model = pipeline("summarization", model=self.model_name)
@@ -21,11 +20,9 @@ class SummarizerService:
             self.model = None
 
     def is_ready(self):
-        """Model tayyor ekanligini tekshirish"""
         return self.model is not None
 
     def summarize(self, text):
-        """Matnni xulosa qilish"""
         if not self.is_ready():
             logger.error("Summarization attempted but model is not loaded")
             raise RuntimeError("Model is not loaded")
@@ -41,5 +38,4 @@ class SummarizerService:
             raise RuntimeError(f"Error generating summary: {str(e)}")
 
 
-# Singleton instance
 summarizer_service = SummarizerService()
