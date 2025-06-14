@@ -45,7 +45,7 @@ def add_rate_limiting(app: FastAPI):
     async def rate_limit_middleware(request: Request, call_next):
         # Faqat API endpointlari uchun tekshirish
         if request.url.path.startswith("/api/"):
-            client_id = request.client.host
+            client_id = request.client.host if request.client and request.client.host else "test-client"
 
             if rate_limiter.is_rate_limited(client_id):
                 logger.warning(f"Rate limit exceeded: {client_id}")
@@ -53,6 +53,7 @@ def add_rate_limiting(app: FastAPI):
                     status_code=429,
                     detail="Too many requests. Please try again later."
                 )
+
 
         # So'rovni qayta ishlash
         return await call_next(request)

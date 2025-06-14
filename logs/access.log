@@ -26,3 +26,16 @@ time: 2025-06-13 19:57:28 -- level: ERROR -- status: 304 -- method: GET -- path:
 time: 2025-06-13 19:57:28 -- level: ERROR -- status: 304 -- method: GET -- path: /static/js/main.js -- client: 127.0.0.1 -- processing_time: 0.0182s
 time: 2025-06-13 19:57:28 -- level: WARNING -- status: 404 -- method: GET -- path: /favicon.ico -- client: 127.0.0.1 -- processing_time: 0.0006s
 time: 2025-06-13 19:58:39 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: 127.0.0.1 -- processing_time: 0.9465s
+time: 2025-06-14 11:06:13 -- level: INFO -- status: 200 -- method: GET -- path: / -- client: unknown -- processing_time: 0.0027s
+time: 2025-06-14 11:06:13 -- level: INFO -- status: 200 -- method: GET -- path: /docs -- client: unknown -- processing_time: 0.0006s
+time: 2025-06-14 11:06:13 -- level: ERROR -- status: 500 -- method: POST -- path: /api/summarize -- client: unknown
+time: 2025-06-14 11:07:50 -- level: INFO -- status: 200 -- method: GET -- path: /docs -- client: unknown -- processing_time: 0.0008s
+time: 2025-06-14 11:07:50 -- level: ERROR -- status: 500 -- method: POST -- path: /api/summarize -- client: unknown
+time: 2025-06-14 11:08:54 -- level: INFO -- status: 200 -- method: GET -- path: /docs -- client: unknown -- processing_time: 0.0011s
+time: 2025-06-14 11:17:50 -- level: INFO -- status: 200 -- method: GET -- path: /docs -- client: unknown -- processing_time: 0.0009s
+time: 2025-06-14 11:19:40 -- level: INFO -- status: 200 -- method: GET -- path: /docs -- client: unknown -- processing_time: 0.0007s
+time: 2025-06-14 11:19:40 -- level: ERROR -- status: 500 -- method: POST -- path: /api/summarize -- client: unknown
+time: 2025-06-14 11:22:01 -- level: INFO -- status: 200 -- method: GET -- path: /docs -- client: unknown -- processing_time: 0.0009s
+time: 2025-06-14 11:22:02 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: unknown -- processing_time: 0.7778s
+time: 2025-06-14 11:24:33 -- level: INFO -- status: 200 -- method: GET -- path: /docs -- client: unknown -- processing_time: 0.0015s
+time: 2025-06-14 11:24:34 -- level: INFO -- status: 200 -- method: POST -- path: /api/summarize -- client: unknown -- processing_time: 0.0055s

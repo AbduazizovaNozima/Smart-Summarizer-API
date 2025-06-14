@@ -9,15 +9,15 @@ WORKDIR /app
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir torch==2.1.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
 
+# Copy and install other requirements
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Log papkasini yaratish
-RUN mkdir -p /app/logs && \
-    chmod 777 /app/logs
+# Log directory
+RUN mkdir -p /app/logs && chmod 777 /app/logs
 
-# Application files
+# App files
 COPY . .
 
-# Run command
+# Run app
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

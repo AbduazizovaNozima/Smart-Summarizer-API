@@ -8,16 +8,16 @@ A RESTful API that accepts text input and returns a summarized version using AI 
 - FastAPI with Pydantic validation
 - Comprehensive error handling
 - Detailed logging system
-- Rate limiting protection
+- Basic rate limiting
 - Simple web interface
 - Dockerized deployment
-- Unit tests
+- Unit tests with 'pytest'
 
 ## Requirements
 
 - Python 3.8+
 - FastAPI
-- Transformers
+- Hugging Face Transformers
 - PyTorch
 - Docker (optional)
 
@@ -25,4 +25,10 @@ A RESTful API that accepts text input and returns a summarized version using AI 
 
 ### Option 1: Local Installation
 
-1. Clone the repository:
+```bash
+git clone https://github.com/AbduazizovaNozima/Smart-Summarizer-API.git
+cd smart-summarizer-api
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload

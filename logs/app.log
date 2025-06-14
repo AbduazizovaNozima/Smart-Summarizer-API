@@ -72,3 +72,55 @@
 2025-06-13 19:58:38,858 - summarizer.service - INFO - Generating summary for text of length: 1
 2025-06-13 19:58:39,799 - summarizer.service - INFO - Summary generated successfully: length=31
 2025-06-13 19:58:39,799 - summarizer.api - INFO - Summary generated successfully: length=31
+2025-06-13 21:33:44,924 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:33:45,071 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:33:45,235 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:33:45,337 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:38:58,175 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:38:58,373 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:38:58,477 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:38:58,657 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:46:43,296 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:46:43,517 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:46:43,622 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:47:55,402 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:47:55,617 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:47:55,718 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:47:55,879 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:47:56,051 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:48:25,186 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:48:25,374 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:48:25,472 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:48:25,628 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:48:25,794 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:00,541 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:00,763 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:00,864 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:01,030 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:01,200 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:23,627 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:23,818 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-13 21:50:23,918 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 10:48:06,161 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 10:48:06,345 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 10:48:06,451 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 10:58:07,266 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 10:58:07,464 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 10:58:07,567 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:01:33,004 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:01:33,212 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:01:33,346 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:03:21,643 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:03:21,865 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:03:21,970 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:06:13,316 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:07:50,472 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:19:40,378 - summarizer - ERROR - Unhandled exception: 'NoneType' object has no attribute 'host'
+2025-06-14 11:22:01,882 - summarizer.api - INFO - Received summarization request: text length=5
+2025-06-14 11:22:01,882 - summarizer.api - INFO - Generating summary...
+2025-06-14 11:22:01,882 - summarizer.service - INFO - Generating summary for text of length: 5
+2025-06-14 11:22:02,654 - summarizer.service - INFO - Summary generated successfully: length=71
+2025-06-14 11:22:02,654 - summarizer.api - INFO - Summary generated successfully: length=71
+2025-06-14 11:24:34,005 - summarizer.api - INFO - Received summarization request: text length=5
+2025-06-14 11:24:34,006 - summarizer.api - INFO - Generating summary...
+2025-06-14 11:24:34,006 - summarizer.api - INFO - Summary generated successfully: length=14

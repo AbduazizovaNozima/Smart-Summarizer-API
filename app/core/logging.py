@@ -43,10 +43,8 @@ def setup_logging():
 
 
 async def log_request(request: Request, status_code: int, processing_time: float = None):
-    """So'rov tafsilotlarini access.log fayliga yozish"""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Status kodga asoslangan log darajasi
     if 200 <= status_code < 300:
         level = "INFO"
     elif 400 <= status_code < 500:
@@ -54,23 +52,23 @@ async def log_request(request: Request, status_code: int, processing_time: float
     else:
         level = "ERROR"
 
-    # Log xabarini formatlash
+    client_host = request.client.host if request.client and request.client.host else "unknown"
+
     log_msg = (
         f"time: {timestamp} -- "
         f"level: {level} -- "
         f"status: {status_code} -- "
         f"method: {request.method} -- "
         f"path: {request.url.path} -- "
-        f"client: {request.client.host}"
+        f"client: {client_host}"
     )
 
-    # Qayta ishlash vaqtini qo'shish agar mavjud bo'lsa
     if processing_time is not None:
         log_msg += f" -- processing_time: {processing_time:.4f}s"
 
-    # Access log fayliga yozish
     async with aiofiles.open("logs/access.log", "a") as f:
         await f.write(log_msg + "\n")
+
 
 
 def add_logging_middleware(app):
