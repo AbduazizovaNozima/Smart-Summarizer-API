@@ -24,7 +24,7 @@ async def rate_limit_middleware(request: Request, call_next):
         allowed = await rate_limiter(client_ip)
 
         if not allowed:
-            logger.warning(f"Rate limit exceeded: {client_ip}")
+            logger.warning("Rate limit exceeded:", client_ip)
             raise HTTPException(
                 status_code=429,
                 detail="Too many requests. Please try again later."
